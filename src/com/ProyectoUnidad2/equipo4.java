@@ -4,7 +4,9 @@
  */
 package com.ProyectoUnidad2;
 
-import com.ProyectoUnidad2.entity.Desktop;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
 import com.ProyectoUnidad2.entity.Laptop;
 
 /**
@@ -17,7 +19,11 @@ public class equipo4 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       
+        JOptionPane.showMessageDialog(null, "Bienvenidos a TODOPC, \n"
+                + "El control auténtico de tus equipos. \n"
+                + "El sistema lo hace por ti.", "Mensaje de bienvenida",
+                JOptionPane.INFORMATION_MESSAGE);
+        
         Laptop d=new Laptop();
         d.setId(1);
         d.setFabricante("Dell");
