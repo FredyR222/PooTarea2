@@ -13,7 +13,9 @@ public class Tablet extends Producto{
     private Boolean capasidadReseptivo;//0 cabasitiva 1 Resistiva
     private double tamanoDiagonalPantalla;
     private String sistemaOperativo;
-
+public Tablet(int idProducto, String fabricante, String modelo, String microProcesador,int capacidadAlmacenamiento, Boolean capasidadReseptivo, double tamanoDiagonalPantalla, String sistemaOper){
+     super(idProducto, fabricante, modelo, microProcesador, capacidadAlmacenamiento);
+    }
     public int getId() {
         return id;
     }
@@ -46,5 +48,8 @@ public class Tablet extends Producto{
         this.sistemaOperativo = sistemaOperativo;
     }
     
-    
+    @Override
+    public String toString() {
+        return  super.toString() + "\nid: " + id + "\nCapasidad Reseptivo: " + capasidadReseptivo + "\nSistema Operativo: " + sistemaOperativo;
+    }
 }
