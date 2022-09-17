@@ -12,7 +12,9 @@ public class Laptop extends Producto{
     private int id;
     private int memoria;
     private double tamanoPantalla;
-
+public Laptop(int idProducto, String fabricante, String modelo, String microProcesador, int capacidadAlmacenamiento, int id, int memoria,int tamanoPantalla){
+     super(idProducto, fabricante, modelo, microProcesador, capacidadAlmacenamiento);
+ }
     public int getId() {
         return id;
     }
@@ -36,5 +38,8 @@ public class Laptop extends Producto{
     public void setTamanoPantalla(double tamanoPantalla) {
         this.tamanoPantalla = tamanoPantalla;
     }
-    
+    @Override
+    public String toString() {
+        return  super.toString() + "\nid: " + id + "\nmemoria: " + memoria + "\nTamaño de Pantalla: " + tamanoPantalla;
+    }
 }
