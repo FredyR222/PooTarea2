@@ -4,17 +4,26 @@
  */
 package com.ProyectoUnidad2.entity;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author equipo4
  */
-public class Laptop extends Producto{
+public class Laptop extends Producto {
+
     private int id;
     private int memoria;
     private double tamanoPantalla;
-public Laptop(int idProducto, String fabricante, String modelo, String microProcesador, int capacidadAlmacenamiento, int id, int memoria,int tamanoPantalla){
-     super(idProducto, fabricante, modelo, microProcesador, capacidadAlmacenamiento);
- }
+
+    public Laptop(int idProducto, String fabricante, String modelo, String microProcesador, int capacidadAlmacenamiento, int id, int memoria, int tamanoPantalla) {
+        super(idProducto, fabricante, modelo, microProcesador, capacidadAlmacenamiento);
+    }
+
+    public Laptop() {
+
+    }
+
     public int getId() {
         return id;
     }
@@ -38,8 +47,25 @@ public Laptop(int idProducto, String fabricante, String modelo, String microProc
     public void setTamanoPantalla(double tamanoPantalla) {
         this.tamanoPantalla = tamanoPantalla;
     }
+
     @Override
     public String toString() {
-        return  super.toString() + "\nid: " + id + "\nmemoria: " + memoria + "\nTamaño de Pantalla: " + tamanoPantalla;
+        return super.toString() + "\nid: " + id + "\nmemoria: " + memoria + "\nTamaño de Pantalla: " + tamanoPantalla;
+    }
+
+    private ArrayList<Laptop> listado = new ArrayList<>();
+
+    public void insert(Laptop laptop, int valores) {
+
+        int cantida = listado.size();
+        laptop.setId(cantida + 1);
+        laptop.setIdProducto(cantida + 1 + valores);
+
+        listado.add(laptop);
+
+    }
+
+    public ArrayList<Laptop> listar() {
+        return listado;
     }
 }

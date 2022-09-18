@@ -4,19 +4,31 @@
  */
 package com.ProyectoUnidad2.entity;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author equipo4
  */
-public class Desktop extends Producto{
+public class Desktop extends Producto {
+
     private int id;
     private int memoria;
     private double tamanoTorre;
-   // private Producto producto;
-public Desktop(int idProducto, String fabricante, String modelo, String microProcesador, int capacidadAlmacenamiento, int id, int memoria, double tamanoTorre){
-     super(idProducto, fabricante, modelo, microProcesador, capacidadAlmacenamiento);
-     
- }
+    // private Producto producto;
+
+    public Desktop(int idProducto, String fabricante, String modelo, String microProcesador, int capacidadAlmacenamiento, int id, int memoria, double tamanoTorre) {
+        super(idProducto, fabricante, modelo, microProcesador, capacidadAlmacenamiento);
+        this.id=id;
+        this.memoria=memoria;
+        this.tamanoTorre=tamanoTorre;
+
+    }
+
+    public Desktop() {
+       
+    }
+
     public int getId() {
         return id;
     }
@@ -40,11 +52,18 @@ public Desktop(int idProducto, String fabricante, String modelo, String microPro
     public void setTamanoTorre(double tamanoTorre) {
         this.tamanoTorre = tamanoTorre;
     }
+
     @Override
     public String toString() {
-        return  super.toString() + "\nid: " + id + "\nmemoria: " + memoria + "\nTamaño de Torre: " + tamanoTorre;
-        
-                
+        return super.toString() + "\nid: " + id + "\nmemoria: " + memoria + "\nTamaño de Torre: " + tamanoTorre;
+
     }
-    
+
+    private ArrayList<Desktop> listado = new ArrayList<>();
+
+    public void registrar(Desktop dato) {
+        listado.add(dato);
+        System.out.println("---- " + listado.size());
+    }
+
 }
