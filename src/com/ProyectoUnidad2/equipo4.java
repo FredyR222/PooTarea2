@@ -113,7 +113,7 @@ public class equipo4 {
                                         + " Espacio de Almacenamiento GB: " + listado.get(i).getCapacidadAlmacenamiento() + " Memoria GB: " + listado.get(i).getMemoria() + " Pantalla Inch: " + listado.get(i).getTamanoPantalla();
 
                             }
-                            JOptionPane.showMessageDialog(null, salida, "Detalle laptop", JOptionPane.INFORMATION_MESSAGE);
+                            JOptionPane.showMessageDialog(null, salida, "Detalle Laptop", JOptionPane.INFORMATION_MESSAGE);
                         }
                         break;
                         case 1: {
@@ -124,10 +124,10 @@ public class equipo4 {
                                 System.out.println("*** " + datosTablet.get(i).getCapasidadReseptivo());
                                 salida = salida + "\n" + datosTablet.get(i).getFabricante() + " " + datosTablet.get(i).getModelo() + " " + datosTablet.get(i).getMicroProcesador() + " Id" + datosTablet.get(i).getId() + ""
                                         + " Espacio de Almacenamiento GB: " + datosTablet.get(i).getCapacidadAlmacenamiento() + " Sistema Operativo: " + datosTablet.get(i).getSistemaOperativo() + ""
-                                        + " Tamaño DiagonalPantalla Inch: " + datosTablet.get(i).getTamanoDiagonalPantalla() + " Tipo pantalla: " + pantalla[boolToInt(datosTablet.get(i).getCapasidadReseptivo())];
+                                        + " Tamaño Pantalla Diagonal Inch: " + datosTablet.get(i).getTamanoDiagonalPantalla() + " Tipo pantalla: " + pantalla[boolToInt(datosTablet.get(i).getCapasidadReseptivo())];
 
                             }
-                            JOptionPane.showMessageDialog(null, salida, "Detalle Desktop", JOptionPane.INFORMATION_MESSAGE);
+                            JOptionPane.showMessageDialog(null, salida, "Detalle Tablet", JOptionPane.INFORMATION_MESSAGE);
                         }
                         break;
                         case 2: {
