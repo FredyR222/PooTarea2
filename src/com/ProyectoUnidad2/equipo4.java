@@ -110,7 +110,7 @@ public class equipo4 {
                             ArrayList<Laptop> listado = laptopDato.listar();
                             for (int i = 0; i < listado.size(); i++) {
                                 salida = salida + "\n" + listado.get(i).getFabricante() + " " + listado.get(i).getModelo() + " " + listado.get(i).getMicroProcesador() + " ID" + listado.get(i).getId() + ""
-                                        + " Eapacio de Almacenamiento GB: " + listado.get(i).getCapacidadAlmacenamiento() + " Memoria GB: " + listado.get(i).getMemoria() + " Pantalla Inch: " + listado.get(i).getTamanoPantalla();
+                                        + " Espacio de Almacenamiento GB: " + listado.get(i).getCapacidadAlmacenamiento() + " Memoria GB: " + listado.get(i).getMemoria() + " Pantalla Inch: " + listado.get(i).getTamanoPantalla();
 
                             }
                             JOptionPane.showMessageDialog(null, salida, "Detalle laptop", JOptionPane.INFORMATION_MESSAGE);
@@ -123,7 +123,7 @@ public class equipo4 {
 
                                 System.out.println("*** " + datosTablet.get(i).getCapasidadReseptivo());
                                 salida = salida + "\n" + datosTablet.get(i).getFabricante() + " " + datosTablet.get(i).getModelo() + " " + datosTablet.get(i).getMicroProcesador() + " Id" + datosTablet.get(i).getId() + ""
-                                        + " Eapacio de Almacenamiento GB: " + datosTablet.get(i).getCapacidadAlmacenamiento() + " Sistema Operativo: " + datosTablet.get(i).getSistemaOperativo() + ""
+                                        + " Espacio de Almacenamiento GB: " + datosTablet.get(i).getCapacidadAlmacenamiento() + " Sistema Operativo: " + datosTablet.get(i).getSistemaOperativo() + ""
                                         + " Tamaño DiagonalPantalla Inch: " + datosTablet.get(i).getTamanoDiagonalPantalla() + " Tipo pantalla: " + pantalla[boolToInt(datosTablet.get(i).getCapasidadReseptivo())];
 
                             }
@@ -135,7 +135,7 @@ public class equipo4 {
 
                             for (int i = 0; i < datosDesktop.size(); i++) {
                                 salida = salida + "\n" + datosDesktop.get(i).getFabricante() + " " + datosDesktop.get(i).getModelo() + " " + datosDesktop.get(i).getMicroProcesador() + " Id" + datosDesktop.get(i).getId() + ""
-                                        + " Eapacio de Almacenamiento GB: " + datosDesktop.get(i).getCapacidadAlmacenamiento() + " Memoria GB: " + datosDesktop.get(i).getMemoria() + " Tamaño torre Inch: " + datosDesktop.get(i).getTamanoTorre();
+                                        + " Espacio de Almacenamiento GB: " + datosDesktop.get(i).getCapacidadAlmacenamiento() + " Memoria GB: " + datosDesktop.get(i).getMemoria() + " Tamaño torre Inch: " + datosDesktop.get(i).getTamanoTorre();
 
                             }
                             JOptionPane.showMessageDialog(null, salida, "Detalle Desktop", JOptionPane.INFORMATION_MESSAGE);
