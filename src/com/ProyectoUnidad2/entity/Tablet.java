@@ -13,8 +13,12 @@ public class Tablet extends Producto{
     private Boolean capasidadReseptivo;//0 cabasitiva 1 Resistiva
     private double tamanoDiagonalPantalla;
     private String sistemaOperativo;
-public Tablet(int idProducto, String fabricante, String modelo, String microProcesador,int capacidadAlmacenamiento, Boolean capasidadReseptivo, double tamanoDiagonalPantalla, String sistemaOper){
+    public Tablet(int idProducto, String fabricante, String modelo, String microProcesador,int capacidadAlmacenamiento, Boolean capasidadReseptivo,int idtablet, double tamanoDiagonalPantalla, String sistemaOper){
      super(idProducto, fabricante, modelo, microProcesador, capacidadAlmacenamiento);
+     this.capasidadReseptivo=capasidadReseptivo;
+     this.sistemaOperativo=sistemaOper;
+     this.tamanoDiagonalPantalla=tamanoDiagonalPantalla;
+     this.id=idtablet;
     }
     public int getId() {
         return id;
